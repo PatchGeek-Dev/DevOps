@@ -57,7 +57,17 @@ public class Mi_ListaREST {
 		repo.EliminardeMiLista(idperfilusuarios,idpeliculas);
 		}
 
-
+		@GetMapping("/lista/cantidad_peliculas/{id}")
+		public int consultarListaCantidad(@PathVariable("id") int id){
+		try {
+			int resultado= repo.CantidadPeliculas(id);
+			return resultado;
+			}
+			catch (Exception e){
+				System.out.println(e);
+				return 0;
+			}
+		}
 	 
 	   
 

@@ -68,9 +68,6 @@ public class Mi_ListaREST {
 				return 0;
 			}
 		}
-	 
-	   
-
 	}
 	   
 	

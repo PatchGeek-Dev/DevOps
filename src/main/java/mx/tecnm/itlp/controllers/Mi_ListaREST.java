@@ -53,8 +53,8 @@ public class Mi_ListaREST {
 		}
 	   
 		@DeleteMapping("/lista/{idperfilusuarios}/{idpeliculas}")
-		public void EliminardeMiLista(@PathVariable("idperfilusuarios") int idperfilusuarios,@PathVariable("idpeliculas") int idpeliculas) {
-		repo.EliminardeMiLista(idperfilusuarios,idpeliculas);
+		public void EliminardeMiLista(@PathVariable("idperfil") int idperfil,@PathVariable("idpeliculas") int idpeliculas) {
+		repo.EliminardeMiLista(idperfil,idpeliculas);
 		}
 	}
 	   

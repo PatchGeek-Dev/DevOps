@@ -39,12 +39,12 @@ public class Mi_ListaJDBC {
 	}
 
 	public int CantidadPeliculas(int idperdilusuairos){
-		Integer cnt = conexion.queryForObject(
+		Integer cantidad = conexion.queryForObject(
     	"SELECT p.titulo, p.sinopsis, p.productora, p.tamano_descarga\r\n"
 		+ "FROM mi_lista AS m\r\n"
 		+"JOIN peliculas AS p ON p.id=m.peliculas_id\r\n"
 		+ "WHERE p.activo = 1 AND m.perfiles_usuarios_id=?", Integer.class, idperdilusuairos);
-	    return cnt;
+	    return cantidad;
 	}
 	
 	

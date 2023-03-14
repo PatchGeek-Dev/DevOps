@@ -64,6 +64,7 @@ public class Mi_ListaREST {
 			return resultado;
 			}
 			catch (Exception e){
+				System.out.println(e);
 				return 0;
 			}
 		}

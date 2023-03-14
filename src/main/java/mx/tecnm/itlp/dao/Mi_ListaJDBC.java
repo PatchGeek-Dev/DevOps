@@ -46,9 +46,4 @@ public class Mi_ListaJDBC {
 		+ "WHERE p.activo = 1 AND m.perfiles_usuarios_id=?", Integer.class, idperdilusuairos);
 	    return cnt;
 	}
-	
-	
-	
-	
-	
 }
